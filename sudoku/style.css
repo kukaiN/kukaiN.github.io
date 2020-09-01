@@ -1,0 +1,31 @@
+table {
+    padding-left:50px;
+    table-layout: auto;
+    width: auto;
+    height: auto;
+
+}
+td {
+    border: 2px solid black;
+}
+
+#top_bar {
+    padding: 40px;
+}
+
+
+.sudoku_cell {
+    border: None;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: inherit;
+}
+
+#main_focus {
+    padding:40px;
+}
+
+.bttn {
+    width: 150px;
+}

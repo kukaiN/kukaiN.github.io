@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+      <style>
+          .warning{
+              color: red;
+              font-weight: bold;
+          }
+      
+      </style>
+  </head>
+  <body>
+  <h1> Age Calc</h1>
+  <input type="number" id="age" placeholder="enter your age"/>
+  <input type="button" id="agebttn" value="calc" />
+  
+  <div id="answer">
+  </div>
+  </body>
+    <script>
+        document.getElementById("age").focus();
+        var bttn = document.getElementById("agebttn");
+        
+        bttn.addEventListener("click", bttnClicked);
+        
+        function calculate(startingYear){
+            var dateObj = new Date()
+            var currentYear = dateObj.getFullYear()
+            return currentYear - startingYear;
+            
+        }
+        
+        function bttnClicked(){
+            console.log("bttn clicked fxn");
+            var age = parseInt(document.getElementById("age").value );
+            
+            var yearsAlive = calculate(age);
+            var html = "You entered " + age;
+            html +="<br /> You have been alive for " + yearsAlive + " years";
+            document.getElementById('answer').innerHTML = html ;
+            if (Number.isNaN(yearsAlive))
+            {
+                var errorMsg ="<b class='warning'> Only Enter Numbers </b>";
+                document.getElementById('answer').innerHTML = errorMsg;
+                var ageElement = document.getElementById("age");
+                ageElement.focus();
+                ageElement.select()
+            }
+            else
+                {
+                  var yearsAlive = calculate(age);
+                    var html = "You entered " + age;
+                    html+= "<br /> You have been alive for " + yearsAlive + " years";
+                    document.getElementById('answer').innerHTML = html;
+                }
+            
+        }
+    </script>
+</html>
