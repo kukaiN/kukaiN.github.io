@@ -32,7 +32,7 @@ function exact_cover_method() {
     root_n = get_size();
     n = root_n*root_n;
     console.log(root_n, n);
-    board =
+    board = 1;
     /*
         def make_board_from(board_val, n):
         """ returns a 2d array of size n x n filled based on the (i, j, num) in the list 'board_val'"""
@@ -126,24 +126,7 @@ function exact_cover_method() {
         if __name__ == "__main__":
             main()
         */
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 
 
 function checker(){
