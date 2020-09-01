@@ -115,3 +115,31 @@ td {
   -ms-transform: translateX(50%);
   transform: translateX(50%);
 }
+
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
