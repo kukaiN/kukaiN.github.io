@@ -127,13 +127,7 @@ function exact_cover_method() {
             main()
         */
     }
-$(document).ready(function () {
 
-        $('#sidebarCollapse').on('click', function () {
-            $('#sidebar').toggleClass('active');
-        });
-
-    });
 
 function checker(){
     var board = document.getElementById("sudoku_board");
