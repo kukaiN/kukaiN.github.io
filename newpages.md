@@ -4,7 +4,7 @@ hello this is a new page
 
 added new line
 
-[link to original page](index.html)
+[link to original page](../)
 [link to original site](../)
 
 
