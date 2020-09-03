@@ -1,6 +1,9 @@
 Only umineko give me joy
 
-
+Currently reading:
+GITS THE HUMAN ALGORITHM
+The art of computer programming
+dynamic programming
 
 favorite music artist/group:
 - Norowareta Night
@@ -14,7 +17,7 @@ favorite music artist/group:
 - MILI
 - Yoko Kanno
 - tamaonsen
-
+- Wasei JJ Chikada
 
 Favorite artist/creator:
 - Zounose(Yakumi Sarai)
