@@ -251,14 +251,14 @@ a.article:hover {
 }
 
 /* Tooltip container */
-.tooltip {
+.tooltip1 {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
 
 /* Tooltip text */
-.tooltip .tooltiptext {
+.tooltip1 .tooltiptext1 {
   visibility: hidden;
   width: 120px;
 
@@ -273,6 +273,6 @@ a.article:hover {
 
 
 /* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
+.tooltip1:hover .tooltiptext1 {
   visibility: visible;
 }
