@@ -71,7 +71,7 @@ span {
 }
 
 #sidebar.active ul li a {
-    padding: 15px 10px;
+    padding: 10px 10px;
     text-align: center;
     font-size: 0.85em;
 }
@@ -264,3 +264,15 @@ a.article:hover {
 .tooltip1:hover .tooltiptext1 {
   visibility: visible;
 }
+
+
+.tooltip1 .tooltiptext1::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+  }
