@@ -173,6 +173,17 @@ a.article:hover {
     color: #fff !important;
 }
 
+.topnavlist {
+    display: inline-flex;
+}
+.topnavlist li {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    justify-content: space-between;
+}
+
+
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
