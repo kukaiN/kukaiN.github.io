@@ -191,7 +191,7 @@ a.article:hover {
     align-items: center;
 }
 .navbarleft{
-    align-content: flex-start;
+    flex-grow: 1;
 }
 .navbarright{
     align-self: flex-end;
