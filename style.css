@@ -183,7 +183,12 @@ a.article:hover {
 .topnavlist {
     display: flex;
 }
-.topnavlist ul li {
+.topnavlist li {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+.topnavitem {
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
