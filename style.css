@@ -69,7 +69,10 @@ span {
 #sidebar ul li a {
     text-align: left;
 }
+/*
+active is when the side ba is fully shown, notminimized
 
+*/
 #sidebar.active ul li a {
     padding: 15px 10px;
     text-align: center;
@@ -182,7 +185,7 @@ a.article:hover {
 }
 .topnavlist li {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 0.5rem;
     justify-content: center;
     align-content: center;
