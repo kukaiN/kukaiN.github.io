@@ -184,7 +184,7 @@ a.article:hover {
 }
 .topnavlist li {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 0.5rem;
     justify-content: space-between;
     align-content: center;
