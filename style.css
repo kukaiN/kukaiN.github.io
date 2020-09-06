@@ -173,6 +173,12 @@ a.article:hover {
     color: #fff !important;
 }
 
+#topnavbar {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+
+}
 .topnavlist {
     display: inline-flex;
 }
@@ -181,6 +187,7 @@ a.article:hover {
     flex-direction: column;
     padding: 0.5rem;
     justify-content: space-between;
+    align-content: center;
 }
 
 
