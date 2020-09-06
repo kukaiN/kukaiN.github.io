@@ -173,11 +173,9 @@ a.article:hover {
     color: #fff !important;
 }
 
-#topnavbar {
+.topnavbar {
     display: flex;
     flex-direction: row;
-    padding: 0.5rem;
-
 }
 .topnavlist {
     display: flex;
@@ -194,8 +192,7 @@ a.article:hover {
     flex-grow: 1;
 }
 .navbarright{
-    align-self: flex-end;
-    align-content: flex-end;
+    flex-grow: 0;
 }
 
 
