@@ -180,17 +180,20 @@ a.article:hover {
     display: flex;
     flex-direction: row;
 }
-.topnavlist {
-    display: flex;
-}
+
 .topnavlist li {
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
 }
-.topnavitem {
+
+.stackcontainer{
     display: flex;
     flex-direction: column;
+}
+
+.stackeditem {
+    display: flex;
     padding: 0.5rem;
     justify-content: center;
     align-content: center;
