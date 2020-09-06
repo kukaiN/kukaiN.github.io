@@ -186,13 +186,15 @@ a.article:hover {
     display: flex;
     flex-direction: row;
     padding: 0.5rem;
-    justify-content: space-between;
+    justify-content: center;
     align-content: center;
+    align-items: center;
 }
 .navbarleft{
     align-content: flex-start;
 }
 .navbarright{
+    align-self: flex-end;
     align-content: flex-end;
 }
 
