@@ -189,6 +189,12 @@ a.article:hover {
     justify-content: space-between;
     align-content: center;
 }
+.navbarleft{
+    align-content: flex-start;
+}
+.navbarright{
+    align-content: flex-end;
+}
 
 
 /* ---------------------------------------------------
