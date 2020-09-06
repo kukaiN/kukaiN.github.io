@@ -184,16 +184,19 @@ a.article:hover {
 .topnavlist li {
     display: flex;
     flex-direction: column;
-    padding: 0.5rem;
 }
 
 .stackcontainer{
     display: flex;
     flex-direction: column;
     align-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 .stackeditem {
+    padding: 0;
+    margin: 0;
     display: flex;
     align-items: center;
 }
