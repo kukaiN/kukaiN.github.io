@@ -190,13 +190,11 @@ a.article:hover {
 .stackcontainer{
     display: flex;
     flex-direction: column;
+    align-content: center;
 }
 
 .stackeditem {
     display: flex;
-    padding: 0.5rem;
-    justify-content: center;
-    align-content: center;
     align-items: center;
 }
 .navbarleft{
