@@ -196,7 +196,7 @@ a.article:hover {
 
 .stackeditem {
     padding: 0;
-    margin: 0;
+    /*margin: 0;*/
     display: flex;
     align-self: center;
 }
