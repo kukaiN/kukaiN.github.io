@@ -3,7 +3,9 @@
 
 [link to new page](newpages.md)
 
-[**Help**](./table_of_content.md)
+
+### help
+- [**Help**](./table_of_content.md)
 
 looking at how mind map was made by some guy
 

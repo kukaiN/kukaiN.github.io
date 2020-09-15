@@ -1,6 +1,5 @@
-table of content:
+# Help
 
-
-- a
-- heres b
-- [heres c](newpages.md)
+* a
+* heres b
+* [heres c](newpages.md)
