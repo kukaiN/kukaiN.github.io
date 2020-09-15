@@ -7,8 +7,7 @@
 ### help
 - [**Help**](./table_of_content.md)
 
-looking at how mind map was made by some guy
-
+looking at how mind map was made by some guy:
 
 ```mind:color,height=300,title=The mind map of PersonalWiki
 # PersonalWiki
