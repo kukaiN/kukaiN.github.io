@@ -18,7 +18,7 @@
 
 <div>
 <label> number of Stocks (default to 2)</label>
-<input type="number" value="3" min="1" max="5" id="stock_num", class="bttn" style="width:40px"/>
+<input type="number" value="3" min="1" max="5" id="stock_num" class="bttn" style="width:40px"/>
 
 
 html table:
