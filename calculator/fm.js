@@ -77,12 +77,13 @@ function startCalc(){
 function getTable(idVal ="numTable"){
     tableData = document.getElementById(idVal).rows;
     console.log(tableData);
+    console.log(tableData[0]);
     return tableData;
 }
 
 /**
  * get the column elements from a table
- * @param  {Number} tableObj the refrenece to the table
+ * @param  {DOM} tableObj the refrenece to the table
  * @return {Number}      Array that stores the values in the rows
  */
 function getColVal(tableObj){
