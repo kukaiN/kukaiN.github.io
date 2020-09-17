@@ -23,6 +23,8 @@
 
 </head>
 
+Please Understand that computers represent numbers using floating point arithmetic so numbers like 0.99999999999 could be actually 1 and 0.30000000000000004 is actually 0.3.  floating point error happens after 10<sup>-8</sup> ~ 10<sup>-10</sup> digits, so be sure to round.
+
 <div>
 <label> number of Stocks (default to 2)</label>
 <input type="number" value="3" min="1" max="5" id="stock_num" class="bttn" style="width:40px"/>
