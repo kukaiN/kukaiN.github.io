@@ -14,7 +14,7 @@ function getTable(idVal ="numTable"){
 
 function listComp(funcName, valArray){
     // simple
-    val outputs = [];
+    var outputs = [];
     for (var i=0;i<valArray;++i){
         outputs.push(funcName(valArray));
     }
@@ -23,8 +23,8 @@ function listComp(funcName, valArray){
 }
 function elementWiseListComp(funcName, arrOfArr){
     // useful when applying function across the i-th items from each list in the list
-    val outputs = [];
-    val minSize = listComp(min, arrOfArr);
+    var outputs = [];
+    var minSize = listComp(min, arrOfArr);
     var arrCount = arrOfArr.length;
     for (var j=0;j<minSize;++j){
         inputArr = [];
