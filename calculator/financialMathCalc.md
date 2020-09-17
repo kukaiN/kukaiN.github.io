@@ -9,7 +9,14 @@
     type: "number";
     value:"1";
 }
-
+.inputTable{
+    border: 1px solid black;
+    text-align:right;
+}
+.inputTable tr td input{
+    border-width:0px;
+    border:none;
+}
 
 </style>
 
@@ -20,31 +27,28 @@
 <label> number of Stocks (default to 2)</label>
 <input type="number" value="3" min="1" max="5" id="stock_num" class="bttn" style="width:40px"/>
 
-
-html table:
-
-
 <table id ="portfolioTable">
+<caption>html table:</caption>
 <tr>
-    <th>scenarios</th>
-    <th>P of wi</th>
-    <th>K1</th>
-    <th>K2</th>
+    <th scope="col">scenarios</th>
+    <th scope="col">P of wi</th>
+    <th scope="col">K1</th>
+    <th scope="col">K2</th>
 </tr>
 <tr>
-    <td>w1</td>
+    <th scope="row">w1</th>
     <td><input class="decInput" id="p1"/></td>
     <td><input class="decInput" id="k11"/></td>
     <td><input class="decInput" id="k21"/></td>
 </tr>
 <tr>
-    <td>w2</td>
+    <th scope="row">w2</th>
     <td><input class="decInput" id="p2"/></td>
     <td><input class="decInput" id="k12"/></td>
     <td><input class="decInput" id="k22"/></td>
 </tr>
 <tr>
-    <td>w3</td>
+    <th scope="row">w3</th>
     <td><input class="decInput" id="p3"/></td>
     <td><input class="decInput" id="k13"/></td>
     <td><input class="decInput" id="k23"/></td>
