@@ -7,7 +7,7 @@
     name: "input a number";
     placeholder:"placeholder";
     type: "number";
-
+    value:0;
 }
 
 
@@ -24,7 +24,7 @@
 html table:
 
 
-<table>
+<table id ="portfolioTable">
 <tr>
     <th>scenarios</th>
     <th>P of wi</th>
@@ -50,7 +50,7 @@ html table:
     <td><input class="decInput" id="k23"/></td>
 </tr>
 </table>
-<input type="button" id="calculateBttn"/>
+<input type="button" id="calculateBttn" value="start calculation" onclick="startCalc()"/>
 <br/>
 <div id="outputSpace">
 
