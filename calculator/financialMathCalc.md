@@ -50,7 +50,11 @@ html table:
     <td><input class="decInput" id="k23"/></td>
 </tr>
 </table>
+
+
 <input type="button" id="calculateBttn" value="start calculation" onclick="startCalc()"/>
+
+
 <br/>
 <div id="outputSpace">
 
