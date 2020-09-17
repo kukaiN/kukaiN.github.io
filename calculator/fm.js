@@ -1,8 +1,7 @@
 function startCalc(){
     var height = 3;
     var width = 2;
-    x = getTable(portfolioTable);
-
+    x = getTable("portfolioTable");
 }
 
 function getTable(idVal ="numTable"){
