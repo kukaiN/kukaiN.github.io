@@ -44,7 +44,7 @@ function square(val){
 }
 
 function expectedVal(valArray, probArray){
-    if valArray.length == probArray.length{
+    if (valArray.length == probArray.length){
         arrlen = valArray.length;
         var expVal = 0;
         for (var i=0; i<arrlen;++i){
