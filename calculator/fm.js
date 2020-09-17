@@ -8,6 +8,8 @@ class security {
             this.E_squared = E_sq(this.k, this.p)
             this.Var = Var(this.k, this.p);
             this.stdev = Math.sqrt(this.Var);
+            console.log("heres the data");
+            console.log(this.expVal, this.E_squared, this.Var, this.stdev);
         }
         else{
             console.log("couldnt calculate E[X], Var(x) and stdev(x)");
@@ -65,8 +67,9 @@ class portfolio {
 function startCalc(){
     var height = 3;
     var width = 2;
-    x = getTable("portfolioTable");
+    var x = getTable("portfolioTable");
     colVal = getColVal(x);
+    var port1 = portfolio(colVal);
 }
 
 /**
@@ -75,8 +78,9 @@ function startCalc(){
  * @return {Number}      tuple of rows and columns
  */
 function getTable(idVal ="numTable"){
-    tableData = document.getElementById(idVal).rows;
+    var tableData = document.getElementById(idVal);
     console.log(tableData);
+    console.log("index [0]");
     console.log(tableData[0]);
     return tableData;
 }
@@ -88,8 +92,10 @@ function getTable(idVal ="numTable"){
  */
 function getColVal(tableObj){
     var arr = tableObj.getElementByTagName("tr");
+    console.log("arr:");
     console.log(arr);
-    var row = tableData.rows;
+    var row = tableObj.rows;
+    console.log("rows:");
     console.log(row);
     return row;
 }
