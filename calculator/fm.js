@@ -21,11 +21,11 @@ class security {
         var pLen = this.p.length;
         var kLen = this.k.length;
         var valid = true;
-        if pLen<kLen{
+        if (pLen<kLen){
             console.log("the probability list is smaller than the security list");
             valid = false;
         }
-        if kLen<pLen{
+        if (kLen<pLen){
             console.log("the security list is smaller than the probability list");
             valid = false;
         }
@@ -35,9 +35,6 @@ class security {
         }
         return valid;
     }
-
-
-
 }
 
 class portfolio {
@@ -58,10 +55,6 @@ class portfolio {
         }
     }
 }
-
-
-
-
 
 /**
  * Starts the calculator
@@ -175,9 +168,6 @@ function pow(val, n){
 }
 
 
-
-
-
 function T(vec1){
     var a = 1;
 }
@@ -185,7 +175,6 @@ function T(vec1){
 function innerProd(vec1, vec2){
     var a = 1;
 }
-
 
 /**
  * Calculate the expected value of the given RV and associated P
