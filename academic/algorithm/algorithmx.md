@@ -1,5 +1,4 @@
-
-[go Back](../../)
+(go Back)[../../]
 
 this is a page on algorithm X
 

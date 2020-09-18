@@ -1,4 +1,4 @@
 here is algorithms
 
 
-(link back)[../../]
+(go Back)[../../]

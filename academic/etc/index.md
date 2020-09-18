@@ -2,7 +2,7 @@ here are other class materials:
 here is etc
 
 
-(link back)[../../]
+(go Back)[../../]
 
 
 - english
