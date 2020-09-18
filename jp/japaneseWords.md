@@ -1,3 +1,5 @@
+[go Back](../)
+
 words for me
 
 東方同人

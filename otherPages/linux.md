@@ -1,3 +1,5 @@
+[go Back](../)
+
 I use raspi4, thinkpad T440 with ubuntu, and a dual boot Debian and windows MSI laptop
 
 
