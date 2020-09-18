@@ -1,31 +1,28 @@
 
 <head>
-<title>solver for financial Math</title>
-<script src="fm.js" type="text/javascript"></script>
-<style>
-.decInput{
-    name: "input a number";
-    placeholder:"placeholder";
-    type: "number";
-    value:"1";
-}
-.portfolioTable{
-    border: 1px solid black;
-    text-align:right;
-}
-.portfolioTable tr td input{
-    border-width:0px;
-    border:none;
-    width:"auto";
-}
-
-</style>
-
-(go Back)[../]
-
-
-
+    <title>solver for financial Math</title>
+    <script src="fm.js" type="text/javascript"></script>
+    <style>
+        .decInput{
+            name: "input a number";
+            placeholder:"placeholder";
+            type: "number";
+            value:"1";
+        }
+        .portfolioTable{
+            border: 1px solid black;
+            text-align:right;
+        }
+        .portfolioTable tr td input{
+            border-width:0px;
+            border:none;
+            width:"auto";
+        }
+    </style>
 </head>
+
+[go back](../)
+(go Back)[../]
 
 Please Understand that computers represent numbers using floating point arithmetic so numbers like 0.99999999999 could be actually 1 and 0.30000000000000004 is actually 0.3.  floating point error happens after 10<sup>-8</sup> ~ 10<sup>-10</sup> digits, so be sure to round.
 
