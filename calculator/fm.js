@@ -80,9 +80,15 @@ function startCalc(){
 function getTable(idVal ="numTable"){
     var tableData = document.getElementById(idVal);
     console.log(tableData);
+    console.log(tableData.length);
     console.log("index [0]");
     console.log(tableData[0]);
     return tableData;
+}
+
+function getTableAsList(idVal ="numTable"){
+    // use this if the shape of the table doesnt need to be conserved
+    return document.querySelectorAll(idVal + " td");
 }
 
 /**
@@ -91,12 +97,25 @@ function getTable(idVal ="numTable"){
  * @return {Number}      Array that stores the values in the rows
  */
 function getColVal(tableObj){
-    var arr = tableObj.getElementByTagName("tr");
+    var arr = tableObj.getElementsByTagName("tr");
     console.log("arr:");
     console.log(arr);
     var row = tableObj.rows;
     console.log("rows:");
     console.log(row);
+    var r = [], i, j, rowNum, colNum;
+    rowNum = arr.length;
+    for (i=0; i<rowNum; ++i){
+        rowData = arr[i].getElementsByTagName("td");
+        colNum = rowData.length;
+        if (colNum > 1){
+            r.push([]);
+        }
+        for (j=0; j<colNum;++j){
+            r[i].push(rowData[j]);
+        }
+    }
+    console.log(r);
     return row;
 }
 
