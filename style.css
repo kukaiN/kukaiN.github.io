@@ -18,6 +18,8 @@ a:focus {
     transition: all 0.3s;
 }
 
+
+
 .navbar {
     padding: 15px 10px;
     background: #fff;
@@ -64,9 +66,9 @@ span {
     display: block;
 }
 
-#sidebar ul li a {
-    text-align: left;
-}
+
+
+
 /*
 active is when the side ba is fully shown, notminimized
 
@@ -118,10 +120,22 @@ active is when the side ba is fully shown, notminimized
     border-bottom: 1px solid #47748b;
 }
 
+#sidebar ul li a .spacer{
+    width: 70%;
+}
+#sidebar ul li a .fa-tools{
+    visibility: visible;
+}
+#sidebar.active ul li a .fa-tools{
+    visibility: hidden;
+}
 #sidebar ul li a {
+    text-align: left;
+    width: 100%;
+    display: flex;
     padding: 10px;
     font-size: 1rem;
-    display: block;
+    display: flex;
 }
 
 #sidebar ul li a:hover {
