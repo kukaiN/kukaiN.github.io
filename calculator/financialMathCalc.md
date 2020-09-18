@@ -16,6 +16,7 @@
 .inputTable tr td input{
     border-width:0px;
     border:none;
+    width:"auto";
 }
 
 </style>
