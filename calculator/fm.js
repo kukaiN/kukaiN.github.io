@@ -98,25 +98,23 @@ function getTableAsList(idVal ="numTable"){
  */
 function getColVal(tableObj, starting_Column_Index=0, header_row_count=1){
     var arr = tableObj.getElementsByTagName("tr");
-    console.log("arr:");
-    console.log(arr);
     var row = tableObj.rows;
-    console.log("rows:");
-    console.log(row);
-    console.log("boolean below")
-    console.log((arr == row));
 
+    //can use .cells
     console.log("starting loop")
     var r = [], i, j, rowNum, colNum;
     rowNum = arr.length;// -1 because we dont need the header
     for (i=header_row_count; i<rowNum; ++i){
         rowData = arr[i].getElementsByTagName("td");
+        console.log(rowData)
         colNum = rowData.length;
+        console.log(rowData)
         if (colNum > 1){
             r.push([]);
         }
         for (j=starting_Column_Index; j<colNum;++j){
-            r[i].push(rowData[j]);
+            console.log(rowData[j])
+            r[i-header_row_count].push(rowData[j].value);
         }
     }
     console.log(r);
