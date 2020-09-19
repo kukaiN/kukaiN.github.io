@@ -68,7 +68,12 @@ function startCalc(){
     var height = 3;
     var width = 2;
     var x = getTable("portfolioTable");
-    colVal = getColVal(x, 1, 1);
+    colVal = getColVal2(x, 1, 1);
+    colVal1 = getColVal(x, 1, 1);
+    console.log("heres table 1");
+    console.log(colVal);
+    console.log("heres table 2");
+    console.log(colVal1);
     var port1 = portfolio(colVal);
 }
 
@@ -95,25 +100,34 @@ function getTableAsList(idVal ="numTable"){
 function getColVal(tableObj, header_row_count=1){
     var arr = tableObj.getElementsByTagName("tr");
     var row = tableObj.rows;
-
     //can use .cells
-    console.log("starting loop")
     var r = [], i, j, rowNum, colNum;
     rowNum = arr.length;// -1 because we dont need the header
     for (i=header_row_count; i<rowNum; ++i){
         rowData = arr[i].getElementsByTagName("td");
-        console.log(rowData);
         colNum = rowData.length;
         if (colNum > 1){
             r.push([]);
         }
         for (j=0; j<colNum;++j){
-            console.log(rowData[j])
             r[i-header_row_count].push(rowData[j].children[0].value);
         }
     }
     console.log(r);
     return r;
+}
+function getColVal2(tableObj, header_count=1){
+    var i, rows = tableObj.rows, arr = [];
+    var rowCount = rows.length;
+    for (i=header_count;i<rowCount;++i){
+        rowCells = rows[i].getElementsByTagName("td");
+        var cellCounts = rowCells.length;
+        arr.push([]);
+        for (j=0; j<cellCounts;++j){
+            arr[i-header_count].push(rowCells[j].children[0].value);
+        }
+    }
+    return arr;
 }
 
 /**
