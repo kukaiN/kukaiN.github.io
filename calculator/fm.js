@@ -108,13 +108,12 @@ function getColVal(tableObj, starting_Column_Index=0, header_row_count=1){
         rowData = arr[i].getElementsByTagName("td");
         console.log(rowData)
         colNum = rowData.length;
-        console.log(rowData)
         if (colNum > 1){
             r.push([]);
         }
         for (j=starting_Column_Index; j<colNum;++j){
             console.log(rowData[j])
-            r[i-header_row_count].push(rowData[j].value);
+            r[i-header_row_count].push(rowData[j].children[0].value);
         }
     }
     console.log(r);
