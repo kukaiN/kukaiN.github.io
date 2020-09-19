@@ -68,7 +68,7 @@ function startCalc(){
     var height = 3;
     var width = 2;
     var x = getTable("portfolioTable");
-    colVal = getColVal(x);
+    colVal = getColVal(x, 1, 1);
     var port1 = portfolio(colVal);
 }
 
@@ -96,22 +96,26 @@ function getTableAsList(idVal ="numTable"){
  * @param  {DOM} tableObj the refrenece to the table
  * @return {Number}      Array that stores the values in the rows
  */
-function getColVal(tableObj){
+function getColVal(tableObj, starting_Column_Index=0, header_row_count=1){
     var arr = tableObj.getElementsByTagName("tr");
     console.log("arr:");
     console.log(arr);
     var row = tableObj.rows;
     console.log("rows:");
     console.log(row);
+    console.log("boolean below")
+    console.log((arr == row));
+
+    console.log("starting loop")
     var r = [], i, j, rowNum, colNum;
-    rowNum = arr.length;
-    for (i=0; i<rowNum; ++i){
+    rowNum = arr.length;// -1 because we dont need the header
+    for (i=header_row_count; i<rowNum; ++i){
         rowData = arr[i].getElementsByTagName("td");
         colNum = rowData.length;
         if (colNum > 1){
             r.push([]);
         }
-        for (j=0; j<colNum;++j){
+        for (j=starting_Column_Index; j<colNum;++j){
             r[i].push(rowData[j]);
         }
     }
