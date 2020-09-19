@@ -79,10 +79,6 @@ function startCalc(){
  */
 function getTable(idVal ="numTable"){
     var tableData = document.getElementById(idVal);
-    console.log(tableData);
-    console.log(tableData.length);
-    console.log("index [0]");
-    console.log(tableData[0]);
     return tableData;
 }
 
@@ -96,7 +92,7 @@ function getTableAsList(idVal ="numTable"){
  * @param  {DOM} tableObj the refrenece to the table
  * @return {Number}      Array that stores the values in the rows
  */
-function getColVal(tableObj, starting_Column_Index=0, header_row_count=1){
+function getColVal(tableObj, header_row_count=1){
     var arr = tableObj.getElementsByTagName("tr");
     var row = tableObj.rows;
 
@@ -106,18 +102,18 @@ function getColVal(tableObj, starting_Column_Index=0, header_row_count=1){
     rowNum = arr.length;// -1 because we dont need the header
     for (i=header_row_count; i<rowNum; ++i){
         rowData = arr[i].getElementsByTagName("td");
-        console.log(rowData)
+        console.log(rowData);
         colNum = rowData.length;
         if (colNum > 1){
             r.push([]);
         }
-        for (j=starting_Column_Index; j<colNum;++j){
+        for (j=0; j<colNum;++j){
             console.log(rowData[j])
             r[i-header_row_count].push(rowData[j].children[0].value);
         }
     }
     console.log(r);
-    return row;
+    return r;
 }
 
 /**
