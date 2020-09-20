@@ -134,12 +134,11 @@ function getColVal2(tableObj, header_count=1){
     var rowCount = rows.length;
     for (i=header_count;i<rowCount;++i){
         rowCells = rows[i].getElementsByTagName("td");
-        console.log(rowCells)
         var cellCounts = rowCells.length;
         arr.push([]);
         for (j=0; j<cellCounts;++j){
-            console.log(j, rowCells[j])
-            arr[i-header_count].push(rowCells[j].children[0].value);
+            console.log(j, rowCells[i][j])
+            arr[i-header_count].push(rowCells[i][j].children[0].value);
         }
     }
     return arr;
