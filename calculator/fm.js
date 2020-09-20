@@ -75,7 +75,6 @@ function startCalc(){
     console.log(colVal);
     console.log("heres table 2");
     console.log(colVal1);
-    console.log(T(colVal1));
 
     colVal = convertMatrixEntrytoNum(colVal);
     var port1 = portfolio(colVal[0], colVal[1], colVal[2]);
@@ -114,22 +113,20 @@ function getTableAsList(idVal ="numTable"){
  * @return {Number}      Array that stores the values in the rows
  */
 function getColVal(tableObj, header_row_count=1){
-    var arr = tableObj.getElementsByTagName("tr");
-    var row = tableObj.rows;
+    var row = tableObj.getElementsByTagName("tr");
     //can use .cells
-    var r = [], i, j, rowNum, colNum;
+    var arr = [], i, j, rowNum, colNum;
     rowNum = arr.length;// -1 because we dont need the header
     for (i=header_row_count; i<rowNum; ++i){
-        rowData = arr[i].getElementsByTagName("td");
+        rowData = row[i].getElementsByTagName("td");
         colNum = rowData.length;
         if (colNum > 1){
-            r.push([]);
+            arr.push([]);
         }
         for (j=0; j<colNum;++j){
-            r[i-header_row_count].push(rowData[j].children[0].value);
+            arr[i-header_row_count].push(rowData[j].children[0].value);
         }
     }
-    console.log(r);
     return r;
 }
 function getColVal2(tableObj, header_count=1){
@@ -137,6 +134,7 @@ function getColVal2(tableObj, header_count=1){
     var rowCount = rows.length;
     for (i=header_count;i<rowCount;++i){
         rowCells = rows[i].getElementsByTagName("td");
+        console.log(rowCells)
         var cellCounts = rowCells.length;
         arr.push([]);
         for (j=0; j<cellCounts;++j){
