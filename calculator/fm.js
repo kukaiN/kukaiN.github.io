@@ -129,16 +129,16 @@ function getColVal(tableObj, header_row_count=1){
     return arr;
 }
 function getColVal2(tableObj, header_count=1){
-    var i, rows = tableObj.getElementsByTagName("tr"), arr = [];
-    console.log(rows)
+    var ii, rows = tableObj.getElementsByTagName("tr"), arr = [];
+    console.log(rows);
     var rowCount = rows.length;
-    for (i=header_count;i<rowCount;++i){
-        rowCells = rows[i].getElementsByTagName("td");
+    for (ii=header_count;ii<rowCount;++ii){
+        rowCells = rows[ii].getElementsByTagName("td");
         var cellCounts = rowCells.length;
         arr.push([]);
-        for (j=0; j<cellCounts;++j){
-            console.log(j, rowCells[j], rowCells[j].children[0])
-            arr[i-header_count].push(rowCells[j].children[0].value);
+        for (jj=0; jj<cellCounts;++jj){
+            console.log(jj, rowCells[jj], rowCells[jj].children[0].value);
+            arr[ii-header_count].push(rowCells[jj].children[0].value);
         }
     }
     return arr;

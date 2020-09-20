@@ -7,7 +7,6 @@
             name: "input a number";
             placeholder:"placeholder";
             type: "number";
-            value:"1";
         }
         .portfolioTable{
             border: 1px solid black;
