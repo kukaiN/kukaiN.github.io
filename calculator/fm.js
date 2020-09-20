@@ -204,10 +204,52 @@ function pow(val, n){
     }
 }
 
+/**
+ * return the Transpose of the matrix/array, doesnt modify original
+ * @param  {Array} MatrixA The matrix/array
+ * @return {Array}      The transposed matrix
+ */
+function T(MatrixA){
+    var j, originalWidth, transposed_matrix = [];
+    // check if its an array of array
+    if (MatrixA[0].constructor === Array){
+        var i, originalHeight = MatrixA.length;
+        originalWidth=MatrixA[0].length;
 
-function T(vec1){
-    var a = 1;
+        for (j=0; j<originalWidth; ++j){
+            transposed_matrix.push([]);
+            for (i=0;i<originalHeight;++i){
+                transposed_matrix[j].push(MatrixA[i][j]);
+            }
+        }
+    }
+    else{
+        // not an array of array, something like [1, 2, 3]
+        // need to convert it to [[1], [2], [3]]
+        originalWidth = MatrixA.length;
+        for (j=0;j<originalWidth;++j){
+            transposed_matrix.push([MatrixA[j]])
+        }
+    }
+    return transposed_matrix
 }
+
+
+// not done, buts a transposer for matrix with unequal child length
+function T_irregular(MatrixA){
+var i, j, transposed_matrix = [];
+    var originalWidth, originalHeight;
+    for (i=0; i<vec1.length; ++i){
+        transposed_matrix.push([])
+        if (vec1[i].constructor === Array){
+            //pass
+        }
+        else{
+            //pass
+        }
+    }
+}
+
 
 function innerProd(vec1, vec2){
     var a = 1;
