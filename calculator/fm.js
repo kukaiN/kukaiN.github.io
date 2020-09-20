@@ -76,7 +76,9 @@ function startCalc(){
     console.log("heres table 2");
     console.log(colVal1);
     console.log(T(colVal1));
-    var port1 = portfolio(colVal);
+
+    colVal = convertMatrixEntrytoNum(colVal);
+    var port1 = portfolio(colVal[0], colVal[1], colVal[2]);
 }
 
 /**
