@@ -70,6 +70,7 @@ function startCalc(){
     var x = getTable("portfolioTable");
     colVal = getColVal2(x, 1, 1);
     colVal1 = getColVal(x, 1, 1);
+
     console.log("heres table 1");
     console.log(colVal);
     console.log("heres table 2");
@@ -86,6 +87,18 @@ function startCalc(){
 function getTable(idVal ="numTable"){
     var tableData = document.getElementById(idVal);
     return tableData;
+}
+
+function convertArrayEntryToNum(arr){
+    return listComp(parseFloat , arr);
+}
+
+function convertMatrixEntrytoNum(matrixA){
+    var height = matrixA.length, i;
+    for (i=0;i<height;++i){
+        matrixA[i] = convertArrayEntryToNum(matrixA[i]);
+    }
+    return matrixA;
 }
 
 function getTableAsList(idVal ="numTable"){
