@@ -74,6 +74,7 @@ function startCalc(){
     console.log(colVal);
     console.log("heres table 2");
     console.log(colVal1);
+    console.log(T(colVal1));
     var port1 = portfolio(colVal);
 }
 
