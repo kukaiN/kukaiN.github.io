@@ -68,8 +68,8 @@ function startCalc(){
     var height = 3;
     var width = 2;
     var x = getTable("portfolioTable");
-    colVal = getColVal2(x, 1, 1);
-    colVal1 = getColVal(x, 1, 1);
+    colVal = getColVal2(x, 1);
+    colVal1 = getColVal(x, 1);
 
     console.log("heres table 1");
     console.log(colVal);
@@ -114,9 +114,8 @@ function getTableAsList(idVal ="numTable"){
  */
 function getColVal(tableObj, header_row_count=1){
     var row = tableObj.getElementsByTagName("tr");
-    //can use .cells
     var arr = [], i, j, rowNum, colNum;
-    rowNum = arr.length;// -1 because we dont need the header
+    rowNum = row.length;// -1 because we dont need the header
     for (i=header_row_count; i<rowNum; ++i){
         rowData = row[i].getElementsByTagName("td");
         colNum = rowData.length;
@@ -138,6 +137,7 @@ function getColVal2(tableObj, header_count=1){
         var cellCounts = rowCells.length;
         arr.push([]);
         for (j=0; j<cellCounts;++j){
+            console.log(j, rowCells[j])
             arr[i-header_count].push(rowCells[j].children[0].value);
         }
     }
