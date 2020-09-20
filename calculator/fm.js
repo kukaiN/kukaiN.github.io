@@ -127,7 +127,7 @@ function getColVal(tableObj, header_row_count=1){
             arr[i-header_row_count].push(rowData[j].children[0].value);
         }
     }
-    return r;
+    return arr;
 }
 function getColVal2(tableObj, header_count=1){
     var i, rows = tableObj.rows, arr = [];
