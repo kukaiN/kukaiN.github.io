@@ -129,7 +129,8 @@ function getColVal(tableObj, header_row_count=1){
     return arr;
 }
 function getColVal2(tableObj, header_count=1){
-    var i, rows = tableObj.rows, arr = [];
+    var i, rows = tableObj.getElementsByTagName("tr"), arr = [];
+    console.log(rows)
     var rowCount = rows.length;
     for (i=header_count;i<rowCount;++i){
         rowCells = rows[i].getElementsByTagName("td");
