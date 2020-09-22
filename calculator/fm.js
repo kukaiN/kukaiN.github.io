@@ -144,21 +144,6 @@ function getColVal2(tableObj, header_count=1){
     return arr;
 }
 
-
-// X[i] is the ith value in X
-int sum = 0
-for (int i = a+j; i<b+j; i++){
-    sum+= x[i-j]
-}
-
-
-// X[i] is the ith value in X
-int sum = 0
-for (int a = 0 a<=b; a++){
-    sum+= x[a]
-}
-
-
 /**
  * Apply a function on each element in the array
  * @param  {Number} funcName The function that is being applied
