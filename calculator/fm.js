@@ -137,12 +137,27 @@ function getColVal2(tableObj, header_count=1){
         var cellCounts = rowCells.length;
         arr.push([]);
         for (jj=0; jj<cellCounts;++jj){
-            console.log(jj, rowCells[jj], rowCells[jj].children[0].value);
+            console.log(rowCells[jj].children[0].value);
             arr[ii-header_count].push(rowCells[jj].children[0].value);
         }
     }
     return arr;
 }
+
+
+// X[i] is the ith value in X
+int sum = 0
+for (int i = a+j; i<b+j; i++){
+    sum+= x[i-j]
+}
+
+
+// X[i] is the ith value in X
+int sum = 0
+for (int a = 0 a<=b; a++){
+    sum+= x[a]
+}
+
 
 /**
  * Apply a function on each element in the array
