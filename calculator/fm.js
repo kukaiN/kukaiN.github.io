@@ -137,8 +137,8 @@ function getColVal2(tableObj, header_count=1){
         var cellCounts = rowCells.length;
         arr.push([]);
         for (jj=0; jj<cellCounts;++jj){
-            console.log(rowCells[jj].children[0].value);
-            arr[ii-header_count].push(rowCells[jj].children[0].value);
+            //console.log(rowCells[jj].children[0].value);
+            arr[ii].push(rowCells[jj].children[0].value);
         }
     }
     return arr;
