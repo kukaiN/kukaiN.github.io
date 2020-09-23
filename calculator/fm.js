@@ -76,8 +76,8 @@ function startCalc(){
     console.log("heres table 2");
     console.log(colVal1);
 
-    colVal = convertMatrixEntrytoNum(colVal);
-    var port1 = portfolio(colVal[0], colVal[1], colVal[2]);
+    //colVal = convertMatrixEntrytoNum(colVal);
+    //var port1 = portfolio(colVal[0], colVal[1], colVal[2]);
 }
 
 /**
@@ -132,7 +132,7 @@ function getColVal2(tableObj, header_count=1){
     var rows = tableObj.getElementsByTagName("tr");
     var ii, jj;
     let arrs = [];
-    console.log(rows);
+
     var rowCount = rows.length;
     var arr2;
     for (ii=header_count;ii<rowCount;++ii){
@@ -143,11 +143,11 @@ function getColVal2(tableObj, header_count=1){
         for (jj=0; jj<cellCounts;++jj){
 
             console.log(rowCells[jj].children[0].value);
-            console.log(arrs)
-            arr2.push(rowCells[jj].children[0].value)
+
+            arr2.push(rowCells[jj].children[0].value, ii-header_count);
             arrs[ii-header_count].push(rowCells[jj].children[0].value);
         }
-        console.log("arr2:", arr2)
+        console.log("arr2:", arr2);
     }
     return arrs;
 }
