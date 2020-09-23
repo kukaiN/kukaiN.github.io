@@ -72,8 +72,8 @@ function startCalc(){
     var colVal2 = getColVal_v2(x, 1);
 
     console.log("heres table 2");
-    console.log(colVal);
-    console.log(colval == colVal2);
+    console.log(colVal, colVal2);
+    console.log(colVal == colVal2);
     //colVal = convertMatrixEntrytoNum(colVal);
     //var port1 = portfolio(colVal[0], colVal[1], colVal[2]);
 }
