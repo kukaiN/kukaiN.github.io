@@ -68,14 +68,12 @@ function startCalc(){
     var height = 3;
     var width = 2;
     var x = getTable("portfolioTable");
-    var colVal = getColVal2(x, 1);
-    var colVal1 = getColVal(x, 1);
+    var colVal = getColVal(x, 1);
+    var colVal2 = getColVal_v2(x, 1);
 
-    console.log("heres table 1");
-    console.log(colVal);
     console.log("heres table 2");
-    console.log(colVal1);
-
+    console.log(colVal);
+    console.log(colval == colVal2);
     //colVal = convertMatrixEntrytoNum(colVal);
     //var port1 = portfolio(colVal[0], colVal[1], colVal[2]);
 }
@@ -112,45 +110,36 @@ function getTableAsList(idVal ="numTable"){
  * @param  {DOM} tableObj the refrenece to the table
  * @return {Number}      Array that stores the values in the rows
  */
-function getColVal(tableObj, header_row_count=1){
-    var row = tableObj.getElementsByTagName("tr");
-    var arr = [], i, j, rowNum, colNum;
-    rowNum = row.length;// -1 because we dont need the header
-    for (i=header_row_count; i<rowNum; ++i){
-        rowData = row[i].getElementsByTagName("td");
-        colNum = rowData.length;
-        if (colNum > 1){
-            arr.push([]);
-        }
-        for (j=0; j<colNum;++j){
-            arr[i-header_row_count].push(rowData[j].children[0].value);
+function getColVal(tableObj, header_count=1){
+    var row = tableObj.getElementsByTagName("tr"), arr=[];
+    var i, j, cellCounts;
+    var rowLen = row.length;// -1 because we dont need the header
+    for (i=header_count; i<rowLen; ++i){
+        cells = row[i].getElementsByTagName("td");
+        cellCounts = cells.length;
+        arr.push([]);
+        for (j=0; j<cellCounts;++j){
+            arr[i-header_count].push(cells[j].children[0].value);
         }
     }
     return arr;
 }
-function getColVal2(tableObj, header_count=1){
-    var rows = tableObj.getElementsByTagName("tr");
-    var ii, jj;
-    let arrs = [];
 
-    var rowCount = rows.length;
-    //var arr2;
-    for (ii=header_count;ii<rowCount;++ii){
-        rowCells = rows[ii].getElementsByTagName("td");
-        var cellCounts = rowCells.length;
-        arrs.push([]);
-        //arr2 = [];
-        for (jj=0; jj<cellCounts;++jj){
-
-            //console.log(rowCells[jj].children[0].value);
-
-            //arr2.push(rowCells[jj].children[0].value, ii-header_count);
-            arrs[ii-header_count].push(rowCells[jj].children[0].value);
+function getColVal_v2(tableObj, header_count=1){
+    var row = tableObj.getElementsByTagName("tr"), arr=[];
+    var cellCounts;
+    var rowLen = row.length;// -1 because we dont need the header
+    for (let i=header_count; i<rowLen; ++i){
+        cells = row[i].getElementsByTagName("td");
+        cellCounts = cells.length;
+        arr.push([]);
+        for (let j=0; j<cellCounts;++j){
+            arr[i-header_count].push(cells[j].children[0].value);
         }
-        //console.log("arr2:", arr2);
     }
-    return arrs;
+    return arr;
 }
+
 
 /**
  * Apply a function on each element in the array
