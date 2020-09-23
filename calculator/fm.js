@@ -68,13 +68,13 @@ function startCalc(){
     var height = 3;
     var width = 2;
     var x = getTable("portfolioTable");
-    colVal = getColVal2(x, 1);
-    //colVal1 = getColVal(x, 1);
+    var colVal = getColVal2(x, 1);
+    var colVal1 = getColVal(x, 1);
 
     console.log("heres table 1");
     console.log(colVal);
-    //console.log("heres table 2");
-    //console.log(colVal1);
+    console.log("heres table 2");
+    console.log(colVal1);
 
     //colVal = convertMatrixEntrytoNum(colVal);
     //var port1 = portfolio(colVal[0], colVal[1], colVal[2]);
