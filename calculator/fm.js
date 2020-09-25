@@ -1,4 +1,4 @@
-class security {
+class Security {
     constructor(p, k) {
         this.p = p;
         this.k = k;
@@ -39,12 +39,14 @@ class security {
     }
 }
 
-class portfolio {
+class Portfolio {
     constructor(p, k1, k2) {
         this.p = p;
-        this.sec1 = new security(p, k1);
-        this.sec2 = new security(p, k2);
+        this.sec1 = new Security(p, k1);
+        this.sec2 = new Security(p, k2);
+        this.validity = false;
         if (this.sec1.validation() & this.sec2.validation()){
+            this.validity = true;
             this.E_k1K2 = E(listComp(mulAcross(k1, k2)), p);
             this.cov = this.E_k1K2 - (this.sec1.expVal * this.sec2.expVal);
             this.p12 = this.cov / (this.sec1.stdev * this.sec2.stdev);
@@ -56,6 +58,19 @@ class portfolio {
             this.p12 = 0;
         }
     }
+    checkforShortSelling(portfolioA, portfolioB){
+        if ((portfolioA instanceof Security) & (portfolioB instanceof Security)){
+            if ((portfolioA.stdev * portfolioB.stdev) == 0){
+                console.log("sigma1*sigma2 = 0")
+            }
+
+        }
+        else{
+            console.log("both parameters needs to be an instance of Security")
+        }
+    }
+
+
 }
 
 /**
@@ -68,14 +83,12 @@ function startCalc(){
     var height = 3;
     var width = 2;
     var x = getTable("portfolioTable");
-    var colVal = getColVal(x, 1);
-    var colVal2 = getColVal_v2(x, 1);
+    var tableData = getTdVal(x, 1);
+    console.log("got list:", tableData)
+    let numericalTableData = convertMatrixEntrytoNum(tableData);
+    let port1 = new Portfolio(colVal[0], colVal[1], colVal[2]);
+    port1.
 
-    console.log("heres table 2");
-    console.log(colVal, colVal2);
-    console.log(colVal == colVal2);
-    //colVal = convertMatrixEntrytoNum(colVal);
-    //var port1 = portfolio(colVal[0], colVal[1], colVal[2]);
 }
 
 /**
@@ -110,22 +123,7 @@ function getTableAsList(idVal ="numTable"){
  * @param  {DOM} tableObj the refrenece to the table
  * @return {Number}      Array that stores the values in the rows
  */
-function getColVal(tableObj, header_count=1){
-    var row = tableObj.getElementsByTagName("tr"), arr=[];
-    var i, j, cellCounts;
-    var rowLen = row.length;// -1 because we dont need the header
-    for (i=header_count; i<rowLen; ++i){
-        cells = row[i].getElementsByTagName("td");
-        cellCounts = cells.length;
-        arr.push([]);
-        for (j=0; j<cellCounts;++j){
-            arr[i-header_count].push(cells[j].children[0].value);
-        }
-    }
-    return arr;
-}
-
-function getColVal_v2(tableObj, header_count=1){
+function getTdVal(tableObj, header_count=1){
     var row = tableObj.getElementsByTagName("tr"), arr=[];
     var cellCounts;
     var rowLen = row.length;// -1 because we dont need the header
@@ -139,7 +137,6 @@ function getColVal_v2(tableObj, header_count=1){
     }
     return arr;
 }
-
 
 /**
  * Apply a function on each element in the array
