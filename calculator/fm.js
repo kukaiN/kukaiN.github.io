@@ -87,7 +87,7 @@ function startCalc(){
     console.log("got list:", tableData)
     let numericalTableData = convertMatrixEntrytoNum(tableData);
     let port1 = new Portfolio(colVal[0], colVal[1], colVal[2]);
-    port1.
+    console.log(port1.p12)
 
 }
 
