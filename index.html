@@ -26,8 +26,10 @@
 
     <script>
         $(function(){
-          $("#includedContent").on("load", "b.html");
+          $("#includedContent").load("b.html", function() {
+  alert( "Load was performed." );
         });
+    })
     </script>
     <!-- jquery, popper, bootstrap js links -->
 
