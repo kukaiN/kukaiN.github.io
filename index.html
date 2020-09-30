@@ -27,9 +27,7 @@
     <script>
         $(function(){
             // this uses ajax, thats why the .slim version of jquery is not used
-          $("#includedContent").load("b.html", function() {
-  alert( "Load was performed." );
-        });
+          $("#includedContent").load("b.html .sidebar", function() {//pass});
     })
     </script>
     <!-- jquery, popper, bootstrap js links -->
@@ -37,9 +35,9 @@
     <!-- Header -->
     <div class="wrapper">
         <!-- Sidebar  -->
-        <div id="includedContent">
+        <nav id="includedContent">
 
-        </div>
+        </nav>
 
         <!-- Page Content  -->
         <div id="content">
