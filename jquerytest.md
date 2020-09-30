@@ -7,7 +7,6 @@
 
 <html>
   <head>
-    <script src="jquery.js"></script>
     <script>
     $(function(){
       $("#includedContent").load("b.html");
