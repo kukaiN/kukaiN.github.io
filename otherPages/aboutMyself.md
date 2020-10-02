@@ -1,6 +1,5 @@
 [go Back](../)
 
-Only umineko give me joy
 
 Currently reading:
 GITS THE HUMAN ALGORITHM
