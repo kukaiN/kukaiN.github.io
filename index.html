@@ -27,7 +27,7 @@
     <script>
         $(function(){
             // this uses ajax, thats why the .slim version of jquery is not used
-          $("#includedContent").load("b.html");
+          $("#sidebar").load("b.html");
     })
     </script>
     <!-- jquery, popper, bootstrap js links -->
@@ -35,7 +35,7 @@
     <!-- Header -->
     <div class="wrapper">
         <!-- Sidebar  -->
-        <nav id="includedContent">
+        <nav id="sidebar">
 
         </nav>
 
@@ -128,8 +128,7 @@
 
     <script type="text/javascript">
         document.addEventListener("DOMContentLoaded", function () {
-        // Do something
-
+        // this function runs when the DOM (contents) are loaded
         $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
             });
