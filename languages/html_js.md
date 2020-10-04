@@ -1,4 +1,4 @@
-# this is a HTML, CSS, JS, SQL page
+# this is a HTML, CSS, JS, SQL, MD page
 
 [go back](../../)
 
@@ -12,6 +12,7 @@ Table of Contents:
       - [on load event](#onload)
     - differences between types of Jquery
 - SQL
+- [Using HTML for HP and MD for other pages](#mdtips)
 
 
 
@@ -42,3 +43,19 @@ https://forum.jquery.com/topic/document-ready-and-window-on-load-in-jquery-3-4-1
 | jquery.slim.js | doesnt have ajax and other cool features | for devs |
 | jquery.slim.min.js | trimed version of jquery.slim.js | for websites |
 
+
+
+---
+<a id = "mdtips"></a>
+
+# Markdown tips for conjoined use with HTML
+
+For linking different pages:
+
+  from markdown to markdown:
+    \[abbreviated link \](markdown)
+  from HTML to markdown page: 
+    *the absolute path doesn't include the .md extension if you want jqkuell to render it
+    <a href="https://absolute_path_to_markdown_page"> abbreviated link<a/>
+  from markdown to HTML: (with or without the .md extension)
+  \[ abbreviated link \](filename)
