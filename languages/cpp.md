@@ -9,6 +9,7 @@ What's listed here is some references for myself, if its a new feature of C++20,
 Table of contents:
 - [c++14](#cpp14)
   - [i++ vs ++i](#plusPlus)
+  - [signed vs unsigned](#signed)
   - [raw pointers](#pointers)
   - [data structures: linked list, doubly linked list stacks, queue, etc](dataStruc)
   - [class vs struc](#classes)
@@ -42,6 +43,15 @@ Below are examples of understandable uses of the ++ operators that show cases th
     arr2[++j] = someValue
     }
   """
+
+<a id = "signed"></a>
+
+### signed vs Unsigned
+
+signed and unsigned are keywords that can be placed preceding the type keyword.
+Signed and unsigned are used for  for numerical variable types
+
+
 
 # not finished yet, Ill get back after my exam
 
