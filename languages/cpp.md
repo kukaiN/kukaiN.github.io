@@ -6,6 +6,8 @@ header
 
 [go back](../../)
 
+[C++ objects](cpp_dataStruc)
+[C++ 4300 Material](cpp_class)
 I coded in c++11 and c++14, and I'm currently trying to get into c++20.
 What's listed here is some references for myself, if its a new feature of C++20, then it will be acompanied with an asteris(*)
 
