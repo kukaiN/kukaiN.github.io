@@ -253,11 +253,11 @@ a.article:hover {
 }
 
 #sidebar.dark {
-    background-color: #1647b1;
+    background-color: #23458f;
     color: aqua;
 }
 #sidebar.dark .sidebar-header {
-    background-color: navy;
+    background-color: rgb(19, 19, 70);
     color: aqua;
 }
 

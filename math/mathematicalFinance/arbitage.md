@@ -33,7 +33,7 @@
 
 
 ### Terminologies
-- Derivative, not a derivative from calculus, it is a type of securitythat have and underliying
+- Derivative, not a derivative from calculus, it is a type of security with a value that derives (hence called derivative) from an underlying asset: stocks, bonds,
 
 
 ## Arbitage principle:
