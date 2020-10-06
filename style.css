@@ -256,17 +256,21 @@ a.article:hover {
     background-color: #1647b1;
     color: aqua;
 }
+#sidebar.dark .sidebar-header {
+    background-color: navy;
+    color: aqua;
+}
 
 #topnavbar.dark {
     background-color: #0d4d6b;
 
 }
-#topnavbar.dark .sidebar-header {
-    background-color: navy;
-    color: aqua;
-}
-.navbarleft {
+
+#topnavbar.dark .navbarleft {
     background-color: inherit;
+}
+#topnavbar.dark .navbarright {
+    background-color: navy;
 }
 #blog .entry{
     box-shadow: 8px 8px 5px grey;
