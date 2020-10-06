@@ -269,6 +269,7 @@ a.article:hover {
         max-width: 80px;
         text-align: center;
         margin-left: -80px !important;
+        font-size: 0;
     }
     .dropdown-toggle::after {
         top: auto;
