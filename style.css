@@ -194,12 +194,12 @@ a.article:hover {
     color: #fff !important;
 }
 
-.topnavbar {
+#topnavbar {
     display: flex;
     flex-direction: row;
 }
 
-.topnavlist li {
+#topnavlist li {
     display: flex;
     flex-direction: column;
 }
@@ -252,6 +252,13 @@ a.article:hover {
     color: aqua;
 }
 
+#sidebar.dark {
+    background-color: #1647b1;
+}
+
+#topnavbar.dark {
+    background-color: #145a7a;
+}
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
