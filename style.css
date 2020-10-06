@@ -247,7 +247,7 @@ a.article:hover {
     transition: all 0.3s;
 }
 
-#content .dark {
+#content.dark {
     background-color: #17313d;
     color: aqua;
 }
