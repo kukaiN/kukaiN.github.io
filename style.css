@@ -1,7 +1,7 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
     font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+    background-color: #fafafa;
 }
 p {
     font-family: 'Poppins', sans-serif;
@@ -21,7 +21,7 @@ a:focus {
 
 .navbar {
     padding: 15px 10px;
-    background: #fff;
+    background-color: #fff;
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
@@ -45,7 +45,7 @@ span {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #7386D5;
+    background-color: #7386D5;
     color: #fff;
     transition: all 0.3s;
 }
@@ -140,7 +140,7 @@ active is when the side ba is fully shown, notminimized
 
 #sidebar ul li a:hover {
     color: #7386D5;
-    background: #fff;
+    background-color: #fff;
 }
 
 #sidebar ul li a i {
@@ -150,7 +150,7 @@ active is when the side ba is fully shown, notminimized
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #6d7fcc;
+    background-color: #6d7fcc;
 }
 
 a[data-toggle="collapse"] {
@@ -168,7 +168,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background-color: #6d7fcc;
 }
 
 ul.CTAs {
@@ -184,13 +184,13 @@ ul.CTAs a {
 }
 
 a.download {
-    background: #fff;
+    background-color: #fff;
     color: #7386D5;
 }
 
 a.article,
 a.article:hover {
-    background: #6d7fcc !important;
+    background-color: #6d7fcc !important;
     color: #fff !important;
 }
 
