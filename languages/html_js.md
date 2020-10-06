@@ -5,12 +5,18 @@
 
 Table of Contents:
 - HTML
+  - FontsAwsome
+  - webp
+  - iso image for icon 
 - CSS
+  - darkmode
+  - toggling
 - JS
   - Jquery
     - differences between Jquery 2 vs Jquery 3:
       - [on load event](#onload)
     - differences between types of Jquery
+  - Bootstrap
 - SQL
 - [Using HTML for HP and MD for other pages](#mdtips)
 

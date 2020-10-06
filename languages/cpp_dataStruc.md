@@ -30,6 +30,26 @@ class ListNode{
   int val;
   listNode* pNext;
 }
+# deconstructor
+clearLinkedList(ListNode* runner){
+  if(runner!=nullptr){
+    clearLinkedList((*runner).pNext);
+    delete runner;
+  }
+}
+
+# adding values to  
+append(ListNode* head){
+
+}
+
+insert(ListNode* head, int value, int index){
+  while(runner != nullptr){
+    
+  }
+
+}
+
 """
 simple Linked list object
 
@@ -52,7 +72,9 @@ class ListNode{
 
 """C++
 class doublyNode{
-
+  doublyNode* pPrev;
+  doublyNode* pNext;
+  int value;
 }
 
 
