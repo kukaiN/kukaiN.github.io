@@ -106,7 +106,7 @@ active is when the side ba is fully shown, notminimized
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background-color: #6d7fcc;
 }
 
 #sidebar .sidebar-header strong {
