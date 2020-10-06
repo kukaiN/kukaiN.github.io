@@ -269,9 +269,7 @@ a.article:hover {
     background-color: inherit;
 }
 #blog .entry{
-    border: 1px solid;
-    border-color: #2a2b2c;
-    border-radius: 15px;
+    box-shadow: 8px 8px 5px grey;
 }
 
 /* ---------------------------------------------------
