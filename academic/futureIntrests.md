@@ -1,3 +1,7 @@
+
+
+[go back](../)
+
 # My Academic Intrests:
 
 My interests range between Physics, Coding, and Mathematics.  However, what excites me the most are the topics that are in the intersections: [Linnear Programming](https://en.wikipedia.org/wiki/Linear_programming), Algorithms, Discrete math, and [Computational Geometry](https://en.wikipedia.org/wiki/Computational_geometry).
