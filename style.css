@@ -165,6 +165,10 @@ a[data-toggle="collapse"] {
     transform: translateY(-50%);
 }
 
+.dropdownLvl2 li a{
+    margin-left: 20px;
+}
+
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
