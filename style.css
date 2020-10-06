@@ -254,11 +254,22 @@ a.article:hover {
 
 #sidebar.dark {
     background-color: #1647b1;
+    color: aqua;
 }
 
 #topnavbar.dark {
-    background-color: #145a7a;
+    background-color: #0d4d6b;
+
 }
+#topnavbar.dark .sidebar-header {
+    background-color: navy;
+    color: aqua;
+}
+.navbarleft {
+    background-color: inherit;
+}
+
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
