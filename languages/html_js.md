@@ -39,9 +39,12 @@ Terminologies:
 Selectors for class is the "." and "#" for ids.
 
 
+---
+<a id = "js"></a>
+# Javascript
 
 ---
-<a id = "cpp14"></a>
+<a id = "onload"></a>
 
 ## On load(), differences
 
