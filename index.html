@@ -27,7 +27,6 @@
         $(function(){
             // this uses ajax, thats why the .slim version of jquery is not used
           $("#sidebar").load("sidebar.html");
-
           $(".posts").load("posts.html");
     })
     </script>
@@ -36,50 +35,43 @@
     <!-- Header -->
     <div class="wrapper">
         <!-- Sidebar  -->
-        <nav id="sidebar">
+        <nav id="sidebar" class="col-lg-*">
 
         </nav>
 
         <!-- Page Content  -->
-        <div id="content">
-            <nav id="topnavbar" class="navbar navbar-expand-lg">
+        <div id="content" class="container col-lg-10">
+            <nav id="topnavbar" class="navbar navbar-expand-lg row">
 
-                <div class="navbarleft">
-                    <div class="container-fluid">
-                        <button type="button" id="sidebarCollapse" class="btn btn-info">
-                            <i class="fas fa-align-left"></i>
-                            <span>Toggle Sidebar</span>
-                        </button>
-                        <button type="button" id="darkMode" class="btn btn-info">
-                                <i class="fas fa-toggle-on"></i>
-                                <span>Darkmode</span>
-                        </button>
-                    </div>
+                <div class="col-lg-6" id="topLeftBar">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+                    <button type="button" id="darkMode" class="btn btn-info">
+                            <i class="fas fa-toggle-on"></i>
+                            <span>Darkmode</span>
+                    </button>
                 </div>
-                <div class="navbarright">
+                <div class="col-lg-6" id="topRightBar">
+                    <div class="rightflex"></div>
                     <ul class="topnavlist nav nav-pills">
                         <li class="nav-item navpill-alt1">
-                            <a class="nav-link active stackcontainer" href="https://github.com/kukaiN" >
-                            <i class="fab fa-github stackeditem" style="font-size: 2rem;"></i>
-                            <!--
-                            <div class="stackeditem">Github</div>
-                            -->
+                            <a class="nav-link active" href="https://github.com/kukaiN" >
+                            <i class="fab fa-github iconSize1"></i>
                             </a>
                         </li>
                         <li class="nav-item navpill-alt1">
-                            <a class="nav-link active stackcontainer" href="https://www.linkedin.com/in/kukai-nakahata/">
-                            <i class="fab fa-linkedin stackeditem"  style="font-size: 2rem; "></i>
-                            <!--<div class="stackeditem">LinkedIn</div>    -->
+                            <a class="nav-link active" href="https://www.linkedin.com/in/kukai-nakahata/">
+                                <i class="fab fa-linkedin iconSize1"></i>
                             </a>
                         </li>
                     </ul>
+
                 </div>
-
-
-
             </nav>
 
-            <div style="clear:both">
+            <div> <!--style="clear:both"-->
                 <!-- Posts -->
                 <div class="posts"></div>
             </div>
@@ -99,6 +91,5 @@
             $("#sidebar").toggleClass('dark');
             $("#topnavbar").toggleClass('dark');
         })
-
     </script>
     </body>
