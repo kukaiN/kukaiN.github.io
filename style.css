@@ -159,18 +159,18 @@ i, span {
     COLORS
 ----------------------------------------------------- */
 
-#sidebar ul li a:hover {
+#wrapper #sidebar ul li a:hover {
     color: #7386D5;
     background-color: #fff;
 }
-#sidebar ul li.active>a,
+#wrapper #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
     background-color: #6d7fcc;
 }
 
 
-.topbaricons{
+#wrapper .topbaricons {
     color:white;
     background-color: aqua;
 }
@@ -187,7 +187,30 @@ a[aria-expanded="true"] {
     .nav-link{color:red;} doesn't work.
 ----------------------------------------------------- */
 
-.nav-pills .navpill-alt1 .nav-link{
+#wrapper .nav-pills .navpill-alt1 .nav-link {
     background-color:rgb(0, 196, 199);
     color:white;
 }
+
+
+
+
+/* ---------------------------------------------------
+    DARK MODE
+----------------------------------------------------- */
+
+
+#wrapper.dark #content {
+    background-color: #17313d;
+    color: aqua;
+}
+
+#wrapper.dark #sidebar {
+    background-color: #23458f;
+    color: aqua;
+}
+#wrapper.dark #sidebar .sidebar-header {
+    background-color: #202d4b;
+    color: aqua;
+}
+
