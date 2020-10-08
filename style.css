@@ -200,16 +200,16 @@ a[aria-expanded="true"] {
 ----------------------------------------------------- */
 
 
-#wrapper.dark #content {
+.wrapper.dark #content {
     background-color: #17313d;
     color: aqua;
 }
 
-#wrapper.dark #sidebar {
+.wrapper.dark #sidebar {
     background-color: #23458f;
     color: aqua;
 }
-#wrapper.dark #sidebar .sidebar-header {
+.wrapper.dark #sidebar .sidebar-header {
     background-color: #202d4b;
     color: aqua;
 }
