@@ -200,7 +200,7 @@ a[aria-expanded="true"] {
 ----------------------------------------------------- */
 
 
-.wrapper.dark #content {
+.wrapper.dark {
     background-color: #17313d;
     color: aqua;
 }
