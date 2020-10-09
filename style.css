@@ -218,3 +218,11 @@ a[aria-expanded="true"] {
 .wrapper.dark #topbar {
     background-color: #0d4d6b;
 }
+
+.wrapper.dark #topbar #topLeftBar{
+    background-color: #0d4d6b;
+}
+
+.wrapper.dark #topbar #topRightBar{
+    background-color: #0d4d6b;
+}
