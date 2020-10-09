@@ -212,5 +212,9 @@ a[aria-expanded="true"] {
 .wrapper.dark #sidebar .sidebar-header {
     background-color: #202d4b;
     color: aqua;
+
 }
 
+.wrapper.dark #topbar {
+    background-color: #0d4d6b;
+}
