@@ -187,12 +187,10 @@ a[aria-expanded="true"] {
     .nav-link{color:red;} doesn't work.
 ----------------------------------------------------- */
 
-#wrapper .nav-pills .navpill-alt1 .nav-link {
+.wrapper .nav-pills .navpill-alt1 .nav-link {
     background-color:rgb(0, 196, 199);
     color:white;
 }
-
-
 
 
 /* ---------------------------------------------------
@@ -215,14 +213,11 @@ a[aria-expanded="true"] {
 
 }
 
-.wrapper.dark #topbar {
+.wrapper.dark #topnavbar {
     background-color: #0d4d6b;
+    color: aqua;
 }
+.wrapper.dark #topnavbar {
 
-.wrapper.dark #topbar #topLeftBar{
-    background-color: #0d4d6b;
-}
-
-.wrapper.dark #topbar #topRightBar{
-    background-color: #0d4d6b;
+    color: aqua;
 }
