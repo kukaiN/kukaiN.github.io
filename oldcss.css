@@ -50,6 +50,7 @@ span {
     transition: all 0.3s;
 }
 
+
 #sidebar.active {
     min-width: 100px;
     max-width: 100px;
@@ -305,8 +306,7 @@ a[aria-expanded="true"] {
     #sidebar.active {
         margin-left: 0 !important;
     }
-    #sidebar .sidebar-header h3,
-    #sidebar .CTAs {
+    #sidebar .sidebar-header h3{
         display: none;
     }
     #sidebar .sidebar-header strong {
