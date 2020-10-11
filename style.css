@@ -43,6 +43,8 @@ div, .fa-tools{
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+
+
 i, span {
     display: inline-block;
 }
@@ -58,7 +60,7 @@ i, span {
 }
 #sidebar .sidebar-header {
     padding: 20px;
-    background-color: #6d7fcc;
+    background-color: #697ac5;
 }
 #sidebar .sidebar-header strong {
     display: none;
@@ -123,6 +125,25 @@ i, span {
     display: block;
 
 }
+#sidebar .collapse{
+    padding-left: 15px;
+}
+#sidebar .collapse i{
+    padding:0px 5px;
+    font-size: 0.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+#sidebar.active .collapse i{
+    visibility: hidden;
+    size:0;
+    display:none;
+
+}
+#sidebar.active .collapse{
+    padding-left: 0px;
+}
 
 /* ---------------------------------------------------
     TOPBAR STYLE
@@ -154,27 +175,26 @@ i, span {
 #blog .entry h3{
     text-decoration: underline;
 }
-
+.wrapper.dark #blog .entry{
+    background-color:  #14313f;
+}
 /* ---------------------------------------------------
     COLORS
 ----------------------------------------------------- */
 
-#wrapper #sidebar ul li a:hover {
+.wrapper #sidebar ul li a:hover {
     color: #7386D5;
     background-color: #fff;
 }
-#wrapper #sidebar ul li.active>a,
+.wrapper #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
     background-color: #6d7fcc;
 }
-
-
-#wrapper .topbaricons {
-    color:white;
-    background-color: aqua;
+.wrapper.dark a[aria-expanded="true"] {
+    color: aqua;
+    background-color: #25468d;
 }
-
 
 /* ---------------------------------------------------
     the single block of CSS below is used to change the default color of
@@ -187,28 +207,30 @@ a[aria-expanded="true"] {
     .nav-link{color:red;} doesn't work.
 ----------------------------------------------------- */
 
+/*
 .wrapper .nav-pills .navpill-alt1 .nav-link {
     background-color:rgb(0, 196, 199);
     color:white;
 }
-
+*/
 
 /* ---------------------------------------------------
     DARK MODE
 ----------------------------------------------------- */
 
 
+
 .wrapper.dark {
-    background-color: #17313d;
+    background-color: #0d2029;
     color: aqua;
 }
 
 .wrapper.dark #sidebar {
-    background-color: #23458f;
+    background-color: #2e52a1;
     color: aqua;
 }
 .wrapper.dark #sidebar .sidebar-header {
-    background-color: #202d4b;
+    background-color: #244286;
     color: aqua;
 
 }
@@ -217,7 +239,11 @@ a[aria-expanded="true"] {
     background-color: #0d4d6b;
     color: aqua;
 }
-.wrapper.dark #topnavbar {
+.wrapper.dark .collapse {
+    background-color: #4265b1;
+}
 
-    color: aqua;
+.wrapper.dark #sidebar ul li a:hover {
+    color: #7386D5;
+    background-color: #fff;
 }
