@@ -251,6 +251,9 @@ a[aria-expanded="true"] {
 
 
 @media (max-width: 768px) {
+    .wrapper {
+        position: relative;
+    }
     #sidebar.active {
         min-width: 80px;
         max-width: 80px;
@@ -260,6 +263,8 @@ a[aria-expanded="true"] {
         display: none;
     }
     #sidebar {
+        position: relative;
+        z-index: 100;
         margin-left: 0px !important;
     }
     #sidebar .sidebar-header strong {
