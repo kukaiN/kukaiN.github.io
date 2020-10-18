@@ -42,9 +42,6 @@ div, .fa-tools{
     margin-bottom: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
-
-
-
 i, span {
     display: inline-block;
 }
@@ -52,11 +49,43 @@ i, span {
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
-#sidebar{
+#sidebar {
+    transition: 1s;
+    margin-right: 15px;
+}
+#sidebar #sidebar-content{
+    padding-left: 10px;
+    display: inline-block;
+    height:100%;
     overflow: auto;
     background-color: #7386D5;
     color: #fff;
-    transition: all 0.3s;
+    flex-grow: 1;
+    transition: 1s;
+}
+#sidebar #mobileSidebarToggle{
+    height:100%;
+    flex-grow: 1;
+    display: none;
+
+}
+#sidebar #mobileSidebarToggle #toggleImage{
+    color: darkgray;
+    float: right;
+    padding-top: 15px;
+    padding-right:30px;
+
+}
+#hello{
+    width:0%;
+    display: none;
+    visibility: hidden;
+    size:0px;
+}
+#mobileSidebarBackground{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.774);
+    width:100%;
 }
 #sidebar .sidebar-header {
     padding: 20px;
@@ -96,6 +125,7 @@ i, span {
     min-width: 100px;
     max-width: 100px;
     text-align: center;
+    padding-left: 0px;
 }
 #sidebar.active .sidebar-header strong {
     display: block;
@@ -144,7 +174,9 @@ i, span {
 #sidebar.active .collapse{
     padding-left: 0px;
 }
-
+.large_icon{
+    font-size:24pt;
+ }
 /* ---------------------------------------------------
     TOPBAR STYLE
 ----------------------------------------------------- */
@@ -162,7 +194,7 @@ i, span {
     width: 100%;
     padding: 20px;
     min-height: 100vh;
-    transition: all 0.3s;
+    transition: 0.3s;
 }
 #blog .entry{
 
@@ -225,7 +257,7 @@ a[aria-expanded="true"] {
     color: aqua;
 }
 
-.wrapper.dark #sidebar {
+.wrapper.dark #sidebar #sidebar-content{
     background-color: #2e52a1;
     color: aqua;
 }
@@ -261,14 +293,34 @@ a[aria-expanded="true"] {
         margin-left: -100px !important;
         font-size: 0;
         display: none;
+        width:0%;
+
     }
     #sidebar {
-        position: relative;
-        z-index: 100;
+        position: fixed;
+        z-index: 1;
         margin-left: 0px !important;
-    }
-    #sidebar .sidebar-header strong {
+        overflow-x: hidden;
 
+        height:100%;
+        width:100%;
+
+    }
+    #sidebar #mobileSidebarBackground {
+        position:fixed;
+        width:100%;
+
+    }
+    #sidebar #sidebar-content{
+        width:45%;
+        flex-grow: 0;
+        transition: all 2s;
+    }
+    #sidebar #mobileSidebarToggle{
+        display: inline-block;
+    }
+
+    #sidebar .sidebar-header strong {
         display:none;
     }
     #sidebar .sidebar-header h3 {

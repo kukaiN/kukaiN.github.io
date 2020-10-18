@@ -26,7 +26,7 @@
     <script>
         $(function(){
             // this uses ajax, thats why the .slim version of jquery is not used
-          $("#sidebar").load("sidebar.html");
+          $("#sidebar-content").load("sidebar.html");
           $(".posts").load("posts.html");
     })
     </script>
@@ -35,9 +35,19 @@
     <!-- Header -->
     <div class="wrapper">
         <!-- Sidebar  -->
-        <nav id="sidebar" class="col-lg-*">
 
-        </nav>
+
+            <nav id="sidebar" class="col-lg-*">
+                <div id="mobileSidebarBackground">
+                    <div class="row" style="height: 100%;">
+                        <div id="sidebar-content">
+                        </div>
+                        <a id="mobileSidebarToggle">
+                            <i class="fas fa-align-left large_icon" id="toggleImage"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
 
         <!-- Page Content  -->
         <div id="content" class="container col-lg-10">
@@ -77,14 +87,17 @@
     <!-- activate the side bar after all the contents are loaded-->
     <script type="text/javascript">
         document.addEventListener("DOMContentLoaded", function () {
-        // this function runs when the DOM (contents) are loaded
-        $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
+            // this function runs when the DOM (contents) are loaded
+            $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
+            $('#darkMode').on("click", function(){
+                $(".wrapper").toggleClass('dark');
             });
+            $('#mobileSidebarToggle').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
         });
-        $('#darkMode').on("click", function(){
-            $(".wrapper").toggleClass('dark');
 
-        })
     </script>
     </body>
