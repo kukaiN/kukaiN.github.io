@@ -43,7 +43,7 @@
                         <div id="sidebar-content">
                         </div>
                         <a id="mobileSidebarToggle">
-                            <i class="fas fa-align-left large_icon" id="toggleImage"></i>
+                            <i class="fas fa-times large_icon" id="toggleImage"></i>
                         </a>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
         <!-- Page Content  -->
         <div id="content" class="container col-lg-10">
             <nav id="topnavbar" class="navbar navbar-expand-lg row">
-                <div class="col-lg-6 col-md-7 col-sm-8" id="topLeftBar">
+                <div class="col-lg-6 col-md-7 col-sm-8 col-xs-4" id="topLeftBar">
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
                         <i class="fas fa-align-left"></i>
                         <span>Toggle Sidebar</span>
@@ -62,7 +62,7 @@
                             <span>Darkmode</span>
                     </button>
                 </div>
-                <div class="col-lg-6 col-md-5 col-sm-4" id="topRightBar">
+                <div class="col-lg-6 col-md-5 col-sm-4 col-xs-3" id="topRightBar">
                     <div class="rightflex"></div>
                     <button type="button" class="btn btn-info">
                         <a href="https://github.com/kukaiN" >
@@ -97,6 +97,10 @@
             $('#mobileSidebarToggle').on('click', function () {
                     $('#sidebar').toggleClass('active');
                 });
+            let winSize = $(window).width();
+            if (winSize <  769){
+                $('#sidebar').toggleClass('active');
+            }
         });
 
     </script>

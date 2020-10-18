@@ -5,7 +5,8 @@
 
 Table of Contents:
   - [HTML](#htmlMain)
-    - FontsAwsome
+    - [FontsAwsome](#fontawsome)
+    - [area-hidden tag](#areaHidden)
     - webp
     - iso image for icon
   - [CSS](#css)
@@ -29,6 +30,38 @@ Table of Contents:
 ## HTML - Hypertext Markup Langauge
 Terminologies:
 - DOM, Document Object Model, a model with set of instructions used to create a tree of objects.  DOM is a standard of getting the document and defines the properties of the objects on a webpage.
+
+
+<a id = "fontawsome"></a>
+
+## FontAwsome
+- Create a class and assign it to the font awsome image to chnage the size in CSS, asigning an id and modifying size doesnt work.
+
+<a id="areaHidden"></a>
+
+## Area-hidden properties
+
+### what is area-hidden for?
+Many people
+
+### flex-grow:
+any object with the flex grow property will expand itself within the parent container and scales proportionally to the total flex-grow property of the child elements in the same level from the parent.
+
+<div style='width:70%'>
+  <div class='flexChild'>flex-grow 1</div>
+  <div class='flexChild2'>flex-grow 2</div>
+  <div class='flexChild'>flex-grow 1</div>
+  <div>no flex</div>
+</div>
+<style>
+  .flexChild {
+    flex-grow:1;
+  }
+  .flexChild2 {
+    flex-grow:2;
+  }
+</style>
+parent
 
 ---
 <a id = "css"></a>
