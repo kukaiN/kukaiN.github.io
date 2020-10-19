@@ -321,7 +321,7 @@ a[aria-expanded="true"] {
         width:100%;
     }
     #sidebar #sidebar-content{
-        width:38%;
+        width:60%;
         flex-grow: 1;
     }
     #sidebar #mobileSidebarToggle{
@@ -333,7 +333,7 @@ a[aria-expanded="true"] {
         vertical-align: top;
         top:0%;
         padding:0;
-        width: 60%;
+        width: 40%;
 
     }
 
@@ -351,12 +351,19 @@ a[aria-expanded="true"] {
         font-size: 1.5rem;
     }
     #sidebar ul li a{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     #topnavbar #topLeftBar span{
         display:none;
     }
     #topnavbar #topLeftBar .iconSize2{
         font-size: 1.5rem;
+    }
+    #topnavbar #topLeftBar{
+        width: 50%;
+    }
+
+    #topnavbar #topRightBar{
+        width: 50%;
     }
 }
