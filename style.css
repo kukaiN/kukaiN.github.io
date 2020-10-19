@@ -143,16 +143,17 @@ i, span {
     display: none;
 }
 #sidebar.active ul li a .fa-tools{
-    visibility: hidden;
-    size:0;
-    display:none;
-
+    color: red;
 }
+
+
+
 #sidebar.active ul li a {
-    padding: 0;
+    padding: 0px 5px;
     text-align: center;
     font-size: 0.8rem;
     display: inline-block;
+
 }
 #sidebar.active ul li .dropdown-toggle{
     padding: 0px;
@@ -175,8 +176,9 @@ i, span {
 #sidebar.active .collapse i{
     visibility: hidden;
     size:0;
-    display:none;
-
+}
+#sidebar.active .fontAwsome_go_brrr{
+    font-size:0pt;
 }
 #sidebar.active .collapse{
     padding-left: 0px;
