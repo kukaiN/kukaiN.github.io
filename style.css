@@ -58,7 +58,7 @@ i, span {
     display: inline-block;
     height:100%;
     overflow: auto;
-    background-color: #7386D5;
+    background-color: #768ada;
     color: #fff;
     flex-grow: 1;
     transition: 1s;
@@ -85,6 +85,7 @@ i, span {
     padding-top: 15px;
     padding-right:30px;
     display: none;
+    padding-left: -5px;
 }
 #mobileSidebarBackground{
     height: 100%;
@@ -142,9 +143,8 @@ i, span {
 #sidebar.active .sidebar-header h3 {
     display: none;
 }
-#sidebar.active ul li a .fa-tools{
-    color: red;
-}
+
+
 
 
 
@@ -234,7 +234,7 @@ i, span {
 .wrapper #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background-color: #6d7fcc;
+    background-color: #6878c0;
 }
 .wrapper.dark a[aria-expanded="true"] {
     color: aqua;
