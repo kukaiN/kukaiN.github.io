@@ -12,9 +12,15 @@
       $("#includedContent").load("b.html");
     });
     </script>
+    <script>
+    $(function(){
+      $("#includedContent2").load("programming/python.md");
+    });
+    </script>
   </head>
 
   <body>
      <div id="includedContent"></div>
+     <div id="includedContent2"></div>
   </body>
 </html>
