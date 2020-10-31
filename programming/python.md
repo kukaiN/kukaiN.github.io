@@ -8,7 +8,6 @@
 [go to pip page](#pipPage)
 
 notes on Libraries:
-- [Notes on Multiple Python Libaries](#notes-on-multiple-python-libaries)
   - [variables:](#variables)
   - [this is a variable](#this-is-a-variable)
   - [chnaging the value to a different type is also valid](#chnaging-the-value-to-a-different-type-is-also-valid)
@@ -26,6 +25,7 @@ notes on Libraries:
   - [pillow](#pillow)
   - [tensorFlow](#tensorflow)
   - [pytorch](#pytorch)
+  - [sklearn](#sklearn)
 
 
 Basics:
@@ -96,6 +96,19 @@ on jupyter notebook  use the command  """%matplotlib inline """ to display image
 
 ## pandas
 
+- delete duplicate rows:
+"""python
+  df["row_name"] = df["row_name"].drop_duplicate()
+  # or
+  df["row_name"].drop_duplicate(inplace=True)
+"""
+- Random forest
+
+- vectorizor
+Vectorizer.transform
+vectorizor.
+
+
 ---
 <a id = "pygame"></a>
 
@@ -121,3 +134,9 @@ on jupyter notebook  use the command  """%matplotlib inline """ to display image
 <a id = "pytorch"></a>
 
 ## pytorch
+
+
+<a id="sklearn"></a>
+
+## sklearn
+
