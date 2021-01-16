@@ -1,8 +1,15 @@
+
+<h1>{{ page.food }}</h1>
+
+
 ---
 food: Pizza
+description: Not pizza
 ---
 
 <h1>{{ page.food }}</h1>
+
+<h1>{{ page.description }}</h1>
 
 
 
