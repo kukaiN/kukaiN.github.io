@@ -1,4 +1,4 @@
 theme: jekyll-theme-cayman
 title: My website
-description: Description <h1> hello</h1>
+description: {{ page.description }}
 author: Kukai Nakahata
