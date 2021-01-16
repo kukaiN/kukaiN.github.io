@@ -1,7 +1,3 @@
-
-<h1>{{ page.food }}</h1>
-
-
 ---
 food: Pizza
 description: Not pizza
@@ -15,9 +11,8 @@ description: Not pizza
 
 [go Back](../)
 
-Hello
-
-
+[go to apache page](apacheserver.md)
+[go to NLP page](nlp.md)
 
 Inprogress projects:
 - developing my static website

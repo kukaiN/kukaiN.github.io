@@ -1,11 +1,9 @@
-[go Back](../)
+[Home page](../)
 
-
+[back to Inprogress](inprogress.md)
 [NLP info](nlp.md)
 
-
-
-# Setup Flask with Apache Server
+# Setting up Flask with Apache Server
 
 ## 1.)  Installing Flask and Apache
 
@@ -20,3 +18,4 @@ Then find your local IP address, either by ```i``` or ```hostname -I | awk 'prin
 <source srcset="../IMAGES/apachesuccess.webp" type="image/webp">
 <source srcset="../IMAGES/apachesuccess.png" type="image/png" alt="Image of Apache front page">
 </picture>
+

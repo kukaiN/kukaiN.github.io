@@ -1,5 +1,8 @@
-# Big project: my personal NLP
+[go back](../)
+[go to Inprogress](inprogress.md)
+[apache Server](apacheserver.md)
 
+# Big project: my personal NLP
 
 ## notes:
 
@@ -13,7 +16,6 @@
 - [lemmitization](#)
 - [part of speech](#)
 - [punctuation](#)
--
 - [Ideas](#ideas)
 
 
