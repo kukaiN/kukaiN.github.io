@@ -1,3 +1,4 @@
 theme: jekyll-theme-cayman
 title: My website
+description: <div id="description"> website with stuff </div>
 author: Kukai Nakahata
