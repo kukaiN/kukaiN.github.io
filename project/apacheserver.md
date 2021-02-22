@@ -91,6 +91,8 @@ insert stuff
 
 ## 3.) setting a virtual enviroment (just to be very safe)
 
+pip install virtualenv
+
 ```
 $ sudo virtualenv venv
 $ source venv/bin/activate

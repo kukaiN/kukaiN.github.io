@@ -25,3 +25,11 @@ Inprogress projects:
 
 Currently working on:
 - Running a ML model on laptop, queries are passed through a webpage made from flask.  hosted using apache server
+
+
+
+General Advasarial Networks (GANs):
+A neural network is a method of approximating a function.
+The generator is approximating the function to make a face and the discriminator is
+approximating a function that is able to determine the validity of the face.
+we are trying to min max the two functions (finding a saddle point).
